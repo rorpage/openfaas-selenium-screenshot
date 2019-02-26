@@ -1,4 +1,5 @@
 import os
+import sys
 import warnings
 from selenium import webdriver
 
@@ -26,4 +27,4 @@ def handle(req):
         driver.close()
 
         with open('/home/app/screenshot.png', 'rb') as f:
-          return f.read()
+          sys.stdout.buffer.write(f.read())

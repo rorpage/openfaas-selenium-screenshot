@@ -15,14 +15,7 @@ def get_stdin():
     return buf
 
 if __name__ == "__main__":
-    #st = get_stdin()
+    st = get_stdin()
     result = handler.handle('https://wdwnt.com')
-    #out_buffer = "HTTP/1.1 200 OK\r\n"
-    #out_buffer += "Content-Length: "+str(len(result))+"\r\n"
-    #out_buffer += "\r\n"
-    #out_buffer += result
-
-    #sys.stdout.write(out_buffer)
-    #sys.stdout.flush()
     if result != None:
         print(result)
