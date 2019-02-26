@@ -16,6 +16,6 @@ def get_stdin():
 
 if __name__ == "__main__":
     st = get_stdin()
-    result = handler.handle('https://wdwnt.com')
+    result = handler.handle(st)
     if result != None:
         print(result)
