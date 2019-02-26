@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+functions:
+  faas-selenium-screenshot:
+    lang: python3
+    handler: ./faas-selenium-screenshot
+    image: faas-selenium-screenshot:latest
+    environment:
+      image_width: 1920
+      image_height: 1080
